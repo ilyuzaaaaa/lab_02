@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/header.hpp
+cstddef
+-
+ctime
+-
+cstdlib
+-
+string
+-
+time.h
+-
+numeric
+-
+algorithm
+-
+random
+-
+iostream
+-
+
+/Users/iluzaangirova/lab_02/sources/main.cpp
+iostream
+-
+header.hpp
+-
+ctime
+-
+vector
+-
+
