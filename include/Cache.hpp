@@ -1,7 +1,7 @@
 // Copyright 2018 Your Name <your_email>
 
-#ifndef INCLUDE_HEADER_HPP_
-#define INCLUDE_HEADER_HPP_
+#ifndef INCLUDE_CACHE_HPP_
+#define INCLUDE_CACHE_HPP_
 #include <time.h>
 
 #include <algorithm>
@@ -37,4 +37,4 @@ class Cache {
 
   ~Cache();
 };
-#endif  // INCLUDE_HEADER_HPP_
+#endif  // INCLUDE_CACHE_HPP_
