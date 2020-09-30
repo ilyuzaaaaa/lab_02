@@ -1,5 +1,0 @@
-/Users/iluzaangirova/lab_02/_builds/CMakeFiles/rebuild_cache.dir
-/Users/iluzaangirova/lab_02/_builds/CMakeFiles/test.dir
-/Users/iluzaangirova/lab_02/_builds/CMakeFiles/edit_cache.dir
-/Users/iluzaangirova/lab_02/_builds/CMakeFiles/template.dir
-/Users/iluzaangirova/lab_02/_builds/CMakeFiles/tests.dir
