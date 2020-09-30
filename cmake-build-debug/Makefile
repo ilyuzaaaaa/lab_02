@@ -154,7 +154,6 @@ sources/main.o: sources/main.cpp.o
 # target to build an object file
 sources/main.cpp.o:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/main.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
 sources/main.i: sources/main.cpp.i
@@ -164,7 +163,6 @@ sources/main.i: sources/main.cpp.i
 # target to preprocess a source file
 sources/main.cpp.i:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/main.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
 sources/main.s: sources/main.cpp.s
@@ -174,7 +172,6 @@ sources/main.s: sources/main.cpp.s
 # target to generate assembly for a file
 sources/main.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/main.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 
 sources/source.o: sources/source.cpp.o

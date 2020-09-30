@@ -70,32 +70,17 @@ CMakeFiles/template.dir/sources/source.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/sources/source.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/iluzaangirova/lab_02/sources/source.cpp -o CMakeFiles/template.dir/sources/source.cpp.s
 
-CMakeFiles/template.dir/sources/main.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/sources/main.cpp.o: ../sources/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iluzaangirova/lab_02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/template.dir/sources/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/sources/main.cpp.o -c /Users/iluzaangirova/lab_02/sources/main.cpp
-
-CMakeFiles/template.dir/sources/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/sources/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/iluzaangirova/lab_02/sources/main.cpp > CMakeFiles/template.dir/sources/main.cpp.i
-
-CMakeFiles/template.dir/sources/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/sources/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/iluzaangirova/lab_02/sources/main.cpp -o CMakeFiles/template.dir/sources/main.cpp.s
-
 # Object files for target template
 template_OBJECTS = \
-"CMakeFiles/template.dir/sources/source.cpp.o" \
-"CMakeFiles/template.dir/sources/main.cpp.o"
+"CMakeFiles/template.dir/sources/source.cpp.o"
 
 # External object files for target template
 template_EXTERNAL_OBJECTS =
 
 libtemplated.a: CMakeFiles/template.dir/sources/source.cpp.o
-libtemplated.a: CMakeFiles/template.dir/sources/main.cpp.o
 libtemplated.a: CMakeFiles/template.dir/build.make
 libtemplated.a: CMakeFiles/template.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/iluzaangirova/lab_02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libtemplated.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/iluzaangirova/lab_02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtemplated.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/template.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/template.dir/link.txt --verbose=$(VERBOSE)
 

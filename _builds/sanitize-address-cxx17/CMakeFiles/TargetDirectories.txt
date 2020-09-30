@@ -1,0 +1,5 @@
+/Users/iluzaangirova/lab_02/_builds/sanitize-address-cxx17/CMakeFiles/rebuild_cache.dir
+/Users/iluzaangirova/lab_02/_builds/sanitize-address-cxx17/CMakeFiles/test.dir
+/Users/iluzaangirova/lab_02/_builds/sanitize-address-cxx17/CMakeFiles/edit_cache.dir
+/Users/iluzaangirova/lab_02/_builds/sanitize-address-cxx17/CMakeFiles/template.dir
+/Users/iluzaangirova/lab_02/_builds/sanitize-address-cxx17/CMakeFiles/tests.dir

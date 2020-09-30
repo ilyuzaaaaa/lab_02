@@ -140,7 +140,6 @@
 		</Build>
 		<Unit filename="/Users/iluzaangirova/lab_02/sources/main.cpp">
 			<Option target="tests"/>
-			<Option target="template"/>
 		</Unit>
 		<Unit filename="/Users/iluzaangirova/lab_02/sources/source.cpp">
 			<Option target="template"/>

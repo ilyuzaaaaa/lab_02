@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/template.dir/sources/main.cpp.o"
   "CMakeFiles/template.dir/sources/source.cpp.o"
   "libtemplated.a"
   "libtemplated.pdb"
