@@ -205,5 +205,5 @@ buffer_size: 13824
        results: 
            duration: 29.2798
 ```
-
+График
 ![alt text](picture.png)​
