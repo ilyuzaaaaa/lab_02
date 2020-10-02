@@ -5,16 +5,22 @@
 
 using std::cout;
 using std::endl;
+
+struct CacheLines {
+  static const size_t FirstLine = 384;  // in KyloBytes
+  static const size_t LastLine = 9216;
+};
+void DoubleUp(int value) { return value * 2; }
+
 int doSomething(int value) { return value; }
 std::vector<int> Cache::amountOfExperiments() {
-  int n = 192;
   std::vector<int> experiments;
-  experiments.push_back(n);
+  experiments.push_back(CacheLines.FirstLine / 2);
   int q = 256;
-  static const auto MAX_SIZE = 13824;
+  static const auto MAX_SIZE = CacheLines.LastLine * 1.5;
   while (q < MAX_SIZE) {
     experiments.push_back(q);
-    q *= 2;
+    DoubleUp(q);
   }
   experiments.push_back(MAX_SIZE);
   return experiments;
@@ -36,10 +42,7 @@ double Cache::firstToEnd() {
   }
   srand(time(NULL));
   clock_t start = clock();
-
-  static const auto SIZE = 1000;
-
-  for (size_t i = 0; i < SIZE; ++i) {
+  for (size_t i = 0; i < iterations; ++i) {
     for (size_t j = 0; j < size; j++) {
       doSomething(array[j]);
     }
@@ -54,8 +57,7 @@ double Cache::endToFirst() {
   }
   srand(time(NULL));
   clock_t start = clock();
-  static const auto SIZE = 1000;
-  for (size_t i = 0; i < SIZE; ++i) {
+  for (size_t i = 0; i < iterations; ++i) {
     for (size_t j = size; j > 0; j--) {
       doSomething(array[j - 1]);
     }
@@ -73,9 +75,8 @@ double Cache::randomWay() {
   for (size_t j = 0; j < size; ++j) {
     doSomething(array[indexes[j]]);
   }
-  static const auto SIZE = 1000;
   clock_t start = clock();
-  for (size_t i = 0; i < SIZE; ++i) {
+  for (size_t i = 0; i < iterations; ++i) {
     for (size_t j = 0; j < size; ++j) {
       doSomething(array[indexes[j]]);
     }

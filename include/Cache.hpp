@@ -18,6 +18,7 @@
 class Cache {
   int *array;
   size_t size;
+  static const auto iterations = 1000;
 
  public:
   explicit Cache(size_t const &size);
