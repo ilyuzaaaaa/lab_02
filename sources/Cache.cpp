@@ -8,19 +8,21 @@ using std::endl;
 
 struct CacheLines {
   static const size_t FirstLine = 384;  // in KyloBytes
+  static const size_t MinPowOfTwo = 256;
   static const size_t LastLine = 9216;
 };
-void DoubleUp(int value) { return value * 2; }
+void DoubleUp(int value) {  value = value * 2; }
 
 int doSomething(int value) { return value; }
+
 std::vector<int> Cache::amountOfExperiments() {
   std::vector<int> experiments;
-  experiments.push_back(CacheLines.FirstLine / 2);
-  int q = 256;
-  static const auto MAX_SIZE = CacheLines.LastLine * 1.5;
-  while (q < MAX_SIZE) {
-    experiments.push_back(q);
-    DoubleUp(q);
+  CacheLines Line;
+  experiments.push_back(Line.FirstLine / 2);
+  static const auto MAX_SIZE = Line.LastLine * 1.5;
+  while (Line.MinPowOfTwo < MAX_SIZE) {
+    experiments.push_back(Line.MinPowOfTwo);
+    DoubleUp(Line.MinPowOfTwo);
   }
   experiments.push_back(MAX_SIZE);
   return experiments;
